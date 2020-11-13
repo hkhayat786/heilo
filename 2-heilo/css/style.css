@@ -1,0 +1,262 @@
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: #dfdfdf;
+    
+}
+/* navigation area starts here*/
+#my-navigation{
+    background: none;
+    border: none;
+    width: 100%;
+    position: absolute;
+    z-index:10;
+}
+#my-navigation .navbar-toggle{
+    display:block;
+    border: 0;
+}
+#my-navigation .navbar-toggle:hover{
+    background: none;
+    cursor: pointer;
+}
+#my-navigation .navbar-header{
+    float: none;
+}
+#my-navigation .navbar-right{
+    float: left !important;
+}
+#my-navigation .icon-right{
+    float: right;
+    position: relative;
+    top: -3px;
+    padding-left: 10px;
+    color: #fff;
+}
+#my-navigation .icon-bar-left{
+    float: left;
+}
+#my-navigation .icon-bar{
+    background-color: white;
+}
+#my-navigation .navbar-brand , #my-navigation ul li a{
+    color: #fff;
+}
+/* navigation area ends here*/
+/* carousel working progress */
+.my-container{
+    color: #fff;
+    /* my-container bahut padding le rha tha use ziro kiyaaa******************************************* */
+    padding: 0;   
+}
+.carousel .item{
+    background-image:url(../img/slide01.jpg);
+    width:100vw;
+    height: 100vh;
+    background-size:cover;
+    /* background position alwes add krni chaiye taaki mobile m better view mille******************************************** */
+    background-position: top center;
+}
+.carousel .item-2{
+    background-image:url(../img/slide02.jpg);
+    /* apne item name ki class me sab difine kiya h  fir sab ke ander lgana jaruri nhi h *********************************************** */
+    /* width:100vw;
+    height: 100vh;
+    background-size:cover; */
+}
+.carousel .item-3{
+    background-image:url(../img/slide03.jpg);
+    /* width:100vw;
+    height: 100vh;
+    background-size:cover; */
+}
+.carousel .item-4{
+    background-image:url(../img/slide04.jpg);
+    /* width:100vw;
+    height: 100vh;
+    background-size:cover; */
+}
+.carousel .item-5{
+    background-image:url(../img/slide05.jpg);
+    /* width:100vw;
+    height: 100vh;
+    background-size:cover; */
+}
+/*banner starts here*/
+.banner-text{
+    width: 30%;
+    position: absolute;
+    top: 45%;
+    left: 37%;
+    z-index: 20;
+    text-align: center;
+}
+.banner-text p{
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+.banner-text hr{
+    width: 50%;
+}
+.banner-text h1{
+    font-size: 120px;
+    font-family:'Poppins', sans-serif;
+    font-weight: 200;
+}
+/* two section area starts here */
+.two-section{
+    text-align: center;
+    margin-top: 50px;
+}
+.two-section .left , .two-section .right{
+    width: 95%;
+    background-color: white;
+    margin-bottom: 60px;
+}
+.two-section img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.two-section .right{
+    margin-left: 5%;
+}
+.two-section h5{
+    letter-spacing: 3px;
+    color: gray;
+    font-size: 12px;
+    font-weight: 300;
+}
+.two-section h3{
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+}
+.two-section p{
+    font-size: 12px;
+    color: gray;
+    font-weight: 300;
+    padding: 10px 30px;
+    text-align: left;
+}
+.two-section button{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+    background: none;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+/* two section area ends here */
+
+/*quote area starts here*/
+.quote-section {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.quote-section h5{
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 200;
+}
+.quote-section hr{
+    width:50%;
+}
+.quote-section h3{
+    font-size: 24px;
+    font-weight: 300;
+}
+/* quote area ends here */
+/*four section area starts here*/
+.four-section{
+    /* paddind alag alg jagha difine kro************************************************************* */
+    padding-top: 80px; 
+    padding-bottom: 80px; 
+}
+.second-quote h5{
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 200;
+    color: gray;
+
+}
+.second-quote hr{
+    width:50%;
+    color: gray;
+}
+.second-quote h3{
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 60px;
+}
+.four-section img{
+    width: 95%;
+    margin-bottom: 10%;
+    float: left;
+    border: 10px solid #fff;
+
+}
+.four-section .left{
+    margin-left: 5%;
+}
+/*four section area ends here*/
+.footer{
+    background-color: black;
+    padding: 60px 0; 
+    text-align: center;
+}
+.footer .fa{
+    font-size: 18px;
+    padding: 10px;
+    color: gray;
+}
+
+/* media query starts here */
+@media only screen and (max-width:780px){
+    .my-collapse{
+        padding-right: 15px;
+        padding-left: 15px;
+        border-top: 1px solid white;
+    }
+    .quote-section h5, .four-section h5{
+        letter-spacing: 3px;
+        font-size: 10px;
+    }
+    .quote-section hr, .four-section hr {
+        width: 60%;
+    }
+    .quote-section h3, .four-section h3{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .banner-text p{
+        font-size: 12px;
+    }
+    .banner-text h1{
+        font-size: 80px;
+        text-align: center;
+    }
+    .two-section .left, .two-section .right{
+        width: 100%;
+
+    }
+    .two-section .right{
+        margin-left: 0;
+    }
+    .four-images img{
+        width: 100%;
+    }
+    .four-section .left{
+        margin-left: 0;
+    }
+    
+}
